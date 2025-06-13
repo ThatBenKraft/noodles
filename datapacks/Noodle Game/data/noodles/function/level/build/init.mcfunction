@@ -1,0 +1,8 @@
+## noodles:level/build/init.mcfunction
+
+fill ~ ~ ~ ~99 ~99 ~ minecraft:air
+$fill ~ ~ ~ ~$(x) ~$(y) ~ minecraft:quartz_block
+
+$execute store result storage noodles:temp x int 1 run random value 0..$(x)
+$execute store result storage noodles:temp y int 1 run random value 0..$(y)
+function noodles:level/build/source/position with storage noodles:temp
