@@ -16,3 +16,6 @@ execute store result storage noodles:temp y int 1 run scoreboard players get #te
 # Begins level generation
 scoreboard players set $loops value 0
 execute as @e[type=minecraft:marker,tag=level] at @s run function noodles:level/build/init with storage noodles:temp
+
+# Assigns direction tags to sources
+execute as @e[type=minecraft:marker,tag=source] run function noodles:level/particle/tag
