@@ -7,7 +7,7 @@ execute unless block ~ ~ ~ #noodles:available run return run function noodles:le
 execute if function noodles:level/build/source/parent/init run return run function noodles:level/build/source/terminate
 
 # Marks the block as visited
-setblock ~ ~ ~ minecraft:spruce_wood
+setblock ~ ~ ~ minecraft:light_gray_terracotta
 
 # Increases loop count
 scoreboard players add $loops value 1

@@ -19,3 +19,5 @@ execute positioned 0 60 0 run function noodles:level/build/init with storage noo
 
 # Assigns direction tags to sources
 execute as @e[type=minecraft:marker,tag=source] run function noodles:level/particle/tag
+
+execute as @e[type=minecraft:marker,tag=source] at @s run function noodles:level/tile/directions_to_block
