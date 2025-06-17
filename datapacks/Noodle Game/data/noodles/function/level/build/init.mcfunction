@@ -5,6 +5,6 @@ fill ~ ~ ~ ~99 ~99 ~ minecraft:air
 $fill ~ ~ ~ ~$(x) ~$(y) ~ minecraft:quartz_block
 
 # Randomly positions origin source
-$execute store result storage noodles:temp x int 1 run random value 0..$(x)
-$execute store result storage noodles:temp y int 1 run random value 0..$(y)
-function noodles:level/build/source/position with storage noodles:temp
+summon minecraft:marker ~ ~ ~ {Tags:["prospect"]}
+scoreboard players set @e[type=minecraft:marker,tag=prospect] generation 0
+execute as @e[type=minecraft:marker,tag=prospect] at @s run function noodles:level/build/source/loop
