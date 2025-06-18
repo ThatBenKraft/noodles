@@ -1,4 +1,4 @@
-## noodles:level/tile/directions_to_block
+## noodles:level/tile/to_block/connected
 
 execute if score @s directions matches 1 run setblock ~ ~ ~ minecraft:brown_glazed_terracotta[facing=north]
 execute if score @s directions matches 2 run setblock ~ ~ ~ minecraft:brown_glazed_terracotta[facing=east]

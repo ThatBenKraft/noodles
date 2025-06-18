@@ -17,8 +17,12 @@ execute store result storage noodles:temp y int 1 run scoreboard players get #te
 scoreboard players set $loops value 0
 execute positioned 0 60 0 run function noodles:level/build/init with storage noodles:temp
 
-# Assigns direction tags to sources
-execute if score $particles value matches 1 as @e[type=minecraft:marker,tag=source] run function noodles:level/particle/tag
+# Assigns direction tags to tiles
+execute if score $particles value matches 1 as @e[type=minecraft:marker,tag=tile] run function noodles:level/particle/tag
 
-# Renders source directions to blocks
-execute as @e[type=minecraft:marker,tag=source] at @s run function noodles:level/tile/directions_to_block
+# Assigns source tile
+tag @e[type=minecraft:marker,tag=tile,limit=1,sort=random] add source
+
+# Renders tile directions to blocks
+execute as @e[type=minecraft:marker,tag=tile,tag=!source] at @s run function noodles:level/tile/to_block/disconnected
+execute as @e[type=minecraft:marker,tag=tile,tag=source] at @s run function noodles:level/tile/to_block/source
