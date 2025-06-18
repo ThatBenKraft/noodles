@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "using_wand": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "noodles": true,
+              "wand": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "noodles:player/wand/activate"
+  }
+}

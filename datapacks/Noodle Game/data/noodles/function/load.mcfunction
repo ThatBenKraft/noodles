@@ -4,6 +4,7 @@
 scoreboard objectives add value dummy
 scoreboard objectives add directions dummy
 scoreboard objectives add generation dummy
+scoreboard objectives add cooldown dummy
 
 scoreboard objectives add size_x trigger
 scoreboard objectives add size_y trigger
