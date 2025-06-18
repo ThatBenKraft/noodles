@@ -1,5 +1,11 @@
 ## noodles:level/particle/tag
 
+# Removes all direction tags
+tag @s remove pos_x
+tag @s remove pos_y
+tag @s remove neg_x
+tag @s remove neg_y
+
 # Translates direction sums into tags
 scoreboard players operation #temp value = @s directions
 

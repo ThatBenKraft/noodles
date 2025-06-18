@@ -3,9 +3,10 @@
 # Adds scoreboards
 scoreboard objectives add value dummy
 scoreboard objectives add directions dummy
+scoreboard objectives add solve_directions dummy
 scoreboard objectives add generation dummy
 scoreboard objectives add cooldown dummy
-
+# Adds triggers
 scoreboard objectives add size_x trigger
 scoreboard objectives add size_y trigger
 scoreboard objectives add particles trigger

@@ -23,6 +23,8 @@ execute if score $particles value matches 1 as @e[type=minecraft:marker,tag=tile
 # Assigns source tile
 tag @e[type=minecraft:marker,tag=tile,limit=1,sort=random] add source
 
-# Renders tile directions to blocks
-execute as @e[type=minecraft:marker,tag=tile,tag=!source] at @s run function noodles:level/tile/to_block/disconnected
-execute as @e[type=minecraft:marker,tag=tile,tag=source] at @s run function noodles:level/tile/to_block/source
+# Stores solution directions
+execute as @e[type=minecraft:marker,tag=tile] run scoreboard players operation @s solve_directions = @s directions
+
+# Randomizes directions and renders blocks
+function noodles:level/randomize

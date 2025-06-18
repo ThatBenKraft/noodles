@@ -1,4 +1,4 @@
-## noodles:player/wand/activate
+## noodles:player/wand/activate.mcfunction
 
 # Starts raycast
 scoreboard players set #temp value 150

@@ -1,4 +1,4 @@
-## noodles:level/tile/rotate/counter_clockwise
+## noodles:level/tile/rotate/counter_clockwise.mcfunction
 
 # Determines direction ID of tile "turned" counter-clockwise 
 scoreboard players operation #temp value = @s directions

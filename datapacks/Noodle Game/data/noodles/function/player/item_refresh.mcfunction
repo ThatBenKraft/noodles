@@ -1,4 +1,4 @@
-## noodles:player/item_refresh
+## noodles:player/item_refresh.mcfunction
 
 # Clears all custom items
 clear @s *[custom_data~{noodles:1b}]

@@ -1,4 +1,4 @@
-## noodles:player/wand/cooldown
+## noodles:player/wand/cooldown.mcfunction
 
 execute if entity @s[advancements={noodles:use_wand=false}] run return 0
 
