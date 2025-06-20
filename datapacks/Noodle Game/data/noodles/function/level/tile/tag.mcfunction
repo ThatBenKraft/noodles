@@ -1,4 +1,4 @@
-## noodles:level/particle/tag
+## noodles:level/tile/tag.mcfunction
 
 # Removes all direction tags
 tag @s remove pos_x

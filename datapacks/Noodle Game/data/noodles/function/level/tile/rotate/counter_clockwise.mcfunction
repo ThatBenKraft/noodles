@@ -6,3 +6,6 @@ scoreboard players set #num value 2
 scoreboard players operation #temp value *= #num value
 execute if score @s directions matches 8.. run scoreboard players remove #temp value 15
 scoreboard players operation @s directions = #temp value
+
+# Assigns direction tags to tile
+function noodles:level/tile/tag

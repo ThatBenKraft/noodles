@@ -13,6 +13,7 @@ scoreboard players operation $moves_min value += #temp value
 # execute if score #temp value matches 3 run setblock ~ ~ ~3 minecraft:red_wool
 
 # Rotates directions accordingly - returns prevent cross-contamination from #temp
+execute if score #temp value matches 0 run return run function noodles:level/tile/tag
 execute if score #temp value matches 1 run return run function noodles:level/tile/rotate/counter_clockwise
 execute if score #temp value matches 2 run return run function noodles:level/tile/rotate/flip
 execute if score #temp value matches 3 run return run function noodles:level/tile/rotate/clockwise
