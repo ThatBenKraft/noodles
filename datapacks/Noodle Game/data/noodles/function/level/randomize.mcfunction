@@ -7,3 +7,6 @@ function noodles:level/solve
 scoreboard players set $moves value 0
 scoreboard players set $moves_min value 0
 execute as @e[type=minecraft:marker,tag=tile] at @s run function noodles:level/tile/rotate/randomize
+
+# Runs spreading
+function noodles:level/spread
