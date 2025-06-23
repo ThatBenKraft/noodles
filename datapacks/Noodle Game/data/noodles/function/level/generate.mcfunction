@@ -23,11 +23,8 @@ tag @e[type=minecraft:marker,tag=tile,limit=1,sort=random] add source
 # Stores solution directions
 execute as @e[type=minecraft:marker,tag=tile] run scoreboard players operation @s solve_directions = @s directions
 
-# Randomizes directions
+# Randomizes directions and spreads
 function noodles:level/randomize
-
-# Starts spreading
-function noodles:level/spread
 
 # Renders level
 function noodles:level/render

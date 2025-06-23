@@ -4,15 +4,14 @@
 scoreboard objectives add value dummy
 scoreboard objectives add directions dummy
 scoreboard objectives add solve_directions dummy
-scoreboard objectives add generation dummy
+scoreboard objectives add loop dummy
 scoreboard objectives add cooldown dummy
 # Adds triggers
 scoreboard objectives add size_x trigger
 scoreboard objectives add size_y trigger
 scoreboard objectives add particles trigger
 scoreboard objectives add generate trigger
-scoreboard objectives add randomize trigger
-scoreboard objectives add solve trigger
+scoreboard objectives add items trigger
 
 # Sets gamerules
 gamerule maxCommandChainLength 250000

@@ -10,3 +10,6 @@ execute as @e[type=minecraft:marker,tag=tile] at @s run function noodles:level/t
 
 # Runs spreading
 function noodles:level/spread
+
+# Runs again if already solved
+execute if function noodles:level/is_won run function noodles:level/randomize
